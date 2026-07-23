@@ -1,0 +1,249 @@
+Hey, welcome to the next exciting chapter where you're going to build a robot vacuum cleaner.
+That sounds interesting, right?
+Now let's consider this is the room and this is your robot vacuum cleaner which is going
+to clean your room. So how should a robot vacuum cleaner work?
+It has to start moving in the room and it has to clean every corner, right?
+Let's consider this is our vacuum cleaner.
+Now do you see how it's moving?
+The line is just for your reference.
+Let's say it has cleaned these places in your house.
+If it has a mop or if it has a broom under it, it's going to clean all these places.
+And if you can see, it's going to the corner that is the wall and then it is getting hit
+from it and then it changes its direction.
+Do you see that?
+It gets hit on the wall and changes its direction.
+Now you will have to code your robot to check if it hits on the wall.
+If it hits, then it has to change its direction.
+By this way, you will be able to make your robot cover the entire house.
+And you can see how well it is mopping the entire room.
+That's super cool, right?
+Shall we learn how to make your robot sense if it has hit the wall and how to change its
+direction and make it clean the entire room?
+Let's go ahead.
+Go ahead and open a new program by clicking on the link in the pop-up that appears.
+Once you open the new project, we shall move to the next step.
+Have you opened a new project?
+Now what is the first step always when you open a new project?
+Change the name.
+Go ahead, click on the top and change the name to Vacuum Cleaner Robot.
+Rename it.
+Once done, we shall proceed to the next step.
+Have you renamed your project?
+Now what is the next step?
+How do we make our robot go to the wall and then detect it and then turn?
+Now, before we see the coding part of it, let us understand our robot first.
+So, if you open the playground, you will be able to see that this is your robot.
+Can you see that your robot has sensors in the front?
+These three are the sensors of your robot.
+We shall see what this sensor is later on.
+But these two sensors are the ones we are going to use for this project.
+Sensor is a device which detects movement or any other parameter in your environment.
+There can be different sensors.
+Gas sensor to detect what kind of gas is around you.
+Bump sensor which detects whether your robot has hit on some object.
+Color sensor to detect color and so on.
+There are many sensors in this world which you can put onto your robot and make it do different stuff.
+Now, these two sensors here are bump sensors.
+They will be able to detect if your robot has hit on any object.
+So, this is the left bump sensor and this is your right bump sensor.
+So, this will detect if the robot has hit on this side and this will detect if your robot has hit on this side.
+So, we will be using these two sensors to detect if the robot has hit the wall.
+Now, going back to the code, if you go to the sensing blocks,
+you will be able to see a section called bumper sensing.
+So, the left bumper and the right bumper is an option which is here.
+Do you see it?
+Now, this is the block we will be using to detect if left bumper has been pressed or if right bumper has been pressed.
+Now, go ahead, find this code and then we shall proceed to the next step.
+Were you able to find this command in the block section?
+Good!
+Now, what will be the code here?
+Your robot has to keep driving in the forward direction till it hits the wall, right?
+And then it has to change its direction and then again do the same thing.
+Keep driving in the forward direction till it hits the wall.
+Change direction, keep driving in the forward direction.
+Hit the wall, then change direction, keep driving in the forward direction.
+So, it's going to keep repeating this.
+So, shall we go to the control block and find which of this we are going to use now?
+Now, you will be spotting which of these blocks we are going to use.
+Remember, your robot has to drive forward till it hits the wall.
+After it hits the wall, then again the same steps have to repeat.
+So, it has to keep repeating until it hits the wall.
+Then change direction and keep repeating until it hits the wall.
+So, go ahead, find out the block which you have to use for this particular code.
+No, that's the wrong block.
+You will have to use the repeat until block.
+That's the correct answer.
+The repeat until block is a very interesting one.
+Whatever commands you put inside this, for example, if you say drive forward,
+this command will continuously execute until some condition is met.
+In our case, what is the condition?
+Until the left bumper is pressed, this condition will work.
+Now, after the left bumper is pressed, this condition will stop working.
+And it will go to the next command.
+So, what should be your next command?
+We want the robot to turn.
+So, turn right by let's say 135 degrees.
+Now, let us put this into our when started section and let us try if this is working.
+So, click on the start button and let's see if the robot is turning after the left bumper is hit.
+Now, did you see that?
+It turned.
+Now, the left bumper got hit and it turned.
+Now, go ahead, try it yourself and see if your robot is turning after the left bumper got hit.
+Now, did it work?
+Did this happen properly?
+That's it. You've almost completed the code.
+Now, this particular process should happen continuously, right?
+It has to go forward, turn right, then again go forward, turn right and it has to keep repeating this forever.
+So, go to the control section and find out the block that we can use for this.
+No, that's a wrong block.
+That will only repeat this particular code for some number of times.
+We want it to repeat forever.
+So, this is the right block, forever.
+That's the correct answer.
+So, if you include this here, now this particular code will continuously run.
+Shall we try it?
+It is going forward.
+And then the left bumper is hit.
+It is turning.
+It's again going forward.
+Again, the left bumper is hit.
+It's turning.
+And then it will keep repeating this.
+Now, go ahead, try it and see if your code is working correctly.
+See if there is any mistake in it.
+There is a small mistake.
+Let me see if you are able to find it out.
+Now, were you able to include the forever block?
+Excellent.
+But did you find out any mistake in this code?
+Now, let me show you what it is.
+So, go to the look section and let's start drawing the lines as the robot goes by.
+This will help us find out the mistake.
+So, let me put the move pin down command here.
+And let me start the code again.
+And let us find out what is the mistake.
+Now, are you able to find out the mistake?
+Did you see that the robot is actually driving on the same line again and again?
+It is not cleaning the entire house.
+It is only cleaning the same lines again and again in a pattern.
+Did you see that?
+Now, this is because we have given an angle in that format.
+Now, if we change this angle, this problem should be solved.
+You should not give angles which will create a pattern.
+Angles like 90 degrees, 120 degrees, 135, 45, such angles will make the robot go round and round in the same pattern like this.
+So, this is the first mistake.
+So, stop the robot and change the angle to 130 or any other angle other than the round numbers.
+Now, let us see how the robot is performing.
+Now, did you see that?
+The pattern has changed.
+The robot is driving in a different angle completely.
+Now, the repetition will not happen.
+So, go ahead, include the pin down, find out your error and change the angle.
+Finish it and then we shall proceed.
+Did you change the angle?
+Is your robot properly cleaning the house?
+It will look as if it is properly cleaning the house.
+But there is one more small mistake which you would have overlooked.
+Let us see what it is.
+Now, in the robot, we saw that there are two sensors, right?
+One is the left bumper sensor and the other is the right bumper sensor.
+This is the left one and this is the right one.
+Now, we have coded only for the left one.
+But the right one is not yet coded.
+Now, what happens if the right bumper sensor hits the wall first?
+Then also your robot has to turn, right?
+But we have coded only for one sensor, that is your left bumper sensor.
+Whether your left or your right bumper, any of it hits, your robot has to turn.
+But we have not coded for it.
+So, whenever the right bumper sensor hits first, your robot will stagger a bit.
+That is, it will try to keep pushing against the wall.
+And then when the left bumper hits, after that your robot will turn.
+I will show that to you now.
+In this scenario, the right bumper is going to hit first.
+But did you see that?
+It pushed a little and after the left hit, then only it turned.
+Here again, it's going to push sometime, then it hits and then it turns.
+This is not the right way of doing it.
+So, how shall we correct it?
+We have to include the right sensor also here.
+That is, the right bumper should also be included here.
+Let us see how to do that.
+Now, go to your sensing section and drag and drop this here.
+And you will find the right bumper option here.
+So, this as well as this needs to be checked.
+Now, how do we join both?
+There is an option for that.
+Go to the operator section and you will find an option called and or option.
+We have to choose the or option.
+That is, the left bumper or the right bumper.
+If this or this, if any of it is pressed, then this function has to happen.
+So, you can drag and drop the whole of this into the condition like this.
+So, this will check whether your left bumper is hit or your right bumper is hit.
+If either one is hit, the robot will start going to the next command.
+Shall we try doing it?
+So, now you will see that the robot automatically turns without staggering against the wall.
+Now, it will not stagger.
+It will quickly turn.
+Did you see that?
+So, go ahead.
+Include this statement where you're saying the left bumper or the right bumper.
+This or can be found out in the operator section.
+So, take this or condition.
+Include the left bumper and right bumper.
+Put it into your repeat until function and then we should proceed to the next step.
+Were you able to do it?
+Did you include both the sensors into your code?
+Excellent.
+Now, you've created a robot vacuum cleaner that properly cleans your house or your room completely without repeating the pattern and also without pushing against the walls.
+That's a great job.
+Now, if you leave this robot, it will keep repeating the pattern.
+It will keep running forever like this.
+That's how you've coded, right?
+Forever is the condition that you've added here.
+But what if I want the robot to stop after one hour or stop after 10 minutes?
+What should you do then?
+Now, there is an option called timer in your code.
+Go to the sensing section and you will find timer in seconds.
+Do you see that?
+Now, just think and see how you can include instead of this forever option.
+How can you include a timer option in your code?
+That is this particular steps.
+That is one, two, three has to get repeated until the timer in seconds is let's say 60 seconds.
+That is for one minute.
+After one minute, your robot has to stop.
+So go ahead, try it.
+And then I will tell you how it needs to be done.
+Now, were you able to do it?
+Were you able to stop your robot after a particular time?
+Let me show you how it needs to be done.
+So let us first delete this forever loop.
+And we are going to use the same repeat until loop.
+This one again.
+And inside this, we are going to use a different operator.
+So in the operators, we are going to use this greater than operator.
+And we are going to use the timer in seconds to compare it.
+So if the timer in seconds is greater than 120, that is two minutes.
+If you put 60, it is 60 seconds, which is one minute.
+I've put 120 here, which is two minutes.
+So now this particular part of the code is going to repeat until the timer in seconds is two minutes.
+After that, it will go out.
+So now let's include it.
+And let's see if the robot is stopping after two minutes.
+Now did you see that?
+The robot has stopped after two minutes.
+And it has completed this much of the room, cleaning so many spaces.
+That's exciting, right?
+Now go ahead, check it yourself.
+Include the repeat until timer in seconds greater than operator and mention the time that you want.
+And see how your robot stops after that time.
+Did you try it?
+Did it work?
+Excellent.
+Now you're a great robot maker and a great coder.
+Go ahead and download the program and save it to your device.
+Once done, we should proceed to the next step.
+Did you save it?
+Good job.
+Now go ahead and finish the teaser questions for this chapter and rush to the next one.
+You're going to be super excited with the robot soldier that you're going to build in the next chapter.
+See you there.
